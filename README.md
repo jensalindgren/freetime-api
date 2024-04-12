@@ -1,4 +1,4 @@
-# Freetime API
+# Freetime API!
 
 ## Project Goals
 
@@ -7,7 +7,7 @@ I will connect it to a frontend with the react framework.
 
 ## Table of Contents
 
-- [Freetime API](#freetime-api)
+- [Freetime API!](#freetime-api)
   - [Project Goals](#project-goals)
   - [Table of Contents](#table-of-contents)
   - [Planning](#planning)
