@@ -3,7 +3,7 @@
 ## Project Goals
 
 This project provides a Django Rest Framework API for all types of platforms.
-I will connect it to a frontend thats running React as its framework.
+I will connect it to a frontend with the react framework.
 
 ## Table of Contents
 
