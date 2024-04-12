@@ -26,8 +26,8 @@ oauthlib==3.2.2
 pathspec==0.12.1
 pillow==10.3.0
 promise==2.3
+psycopg2-binary==2.9.9
 pydot==2.0.0
-pygraphviz==1.12
 PyJWT==2.8.0
 pyparsing==3.1.2
 PySocks==1.7.1
