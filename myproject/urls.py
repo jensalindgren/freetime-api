@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import root_route, logout_route
+from graphene_django.views import GraphQLView
 
 urlpatterns = [
     path('', root_route),
@@ -26,6 +27,8 @@ urlpatterns = [
     path('dj-rest-auth/', include('dj_rest_auth.urls')),
     path('dj-rest-auth/registration/', include(
         'dj_rest_auth.registration.urls')),
+    
+    path('graphql/', GraphQLView.as_view(graphiql=True)),
     
     path('', include('profiles.urls')),
     path('', include('post.urls')),

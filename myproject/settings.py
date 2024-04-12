@@ -98,6 +98,7 @@ INSTALLED_APPS = [
     'dj_rest_auth.registration',
     'corsheaders',
     'rest_framework.authtoken',
+    'graphene_django',
     
     
     'profiles',
