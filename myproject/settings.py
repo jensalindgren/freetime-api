@@ -18,9 +18,9 @@ import re
 
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dh6xaeds9',
-    'API_KEY': 'e7bdfd50c3fca06f221499d2ee5a7e',
-    'API_SECRET': 'tudortilda',
+    'CLOUD_NAME': os.getenv('CLOUD_NAME'),
+    'API_KEY': os.getenv('API_KEY'),
+    'API_SECRET': os.getenv('API_SECRET'),
 }
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
@@ -64,7 +64,7 @@ JWT_AUTH_SAMESITE = 'None'
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-uh0$8p#ig))kwo6qtvobu$kqr+@3(%15hl5*7u)!+!h^!+kliq'
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -193,10 +193,8 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 import os
 from dotenv import load_dotenv
 
-# Läs in miljövariabler från .env-filen
 load_dotenv()
 
-# Uppdatera inställningarna för databasanslutning med miljövariabler
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
